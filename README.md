@@ -6,7 +6,7 @@
 [![Contributors](https://img.shields.io/github/contributors/JnxF/advent-of-code-2019.svg)](https://GitHub.com/JnxF/advent-of-code-2019/graphs/contributors/)
 [![GitHub License](https://img.shields.io/github/license/JnxF/advent-of-code-2019.svg)](https://github.com/JnxF/advent-of-code-2019/blob/master/LICENSE)
 
-![GitHub badge](https://github.com/JnxF/advent-of-code-2019/workflows/Python%20application/badge.svg)
+![GitHub badge](https://github.com/JnxF/advent-of-code-2019/workflows/Advent%20of%20Code%202019/badge.svg)
 ## Official description
 
 <a href="https://adventofcode.com/2019">Advent of Code</a> is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
