@@ -7,12 +7,12 @@ layer_size = x * y
 numlayers = len(L) // layer_size
 layers = []
 for i in range(numlayers):
-	new_layer = list(L[i*layer_size : (i+1)*layer_size])
-	layers.append(new_layer)
+    new_layer = list(L[i*layer_size:(i+1)*layer_size])
+    layers.append(new_layer)
 
 # Part 1
 # Find layer with less zeros
-min_zeros_layer = min(layers, key = lambda l: l.count("0"))
+min_zeros_layer = min(layers, key=lambda l: l.count("0"))
 c1 = min_zeros_layer.count("1")
 c2 = min_zeros_layer.count("2")
 print("Part 1:", c1*c2)
@@ -21,15 +21,15 @@ print("Part 1:", c1*c2)
 # Create empty layer (all transparent)
 res = ["2"] * layer_size
 for l in layers:
-	for idx, c in enumerate(l):
-		if res[idx] == "2":
-			res[idx] = c
+    for idx, c in enumerate(l):
+        if res[idx] == "2":
+            res[idx] = c
 
 # Print final layer in a matrix-like fashion
 print("Part 2:")
 BLACK_BOX_CHAR = u"\u2588"
 for i in range(y):
-	for j in range(x):
-		char = res[i*x + j]
-		print(BLACK_BOX_CHAR if char == "1" else " ", end = "")
-	print()
+    for j in range(x):
+        char = res[i*x + j]
+        print(BLACK_BOX_CHAR if char == "1" else " ", end="")
+    print()
